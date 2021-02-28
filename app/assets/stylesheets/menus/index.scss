@@ -21,6 +21,23 @@
   font-size: 70px;
   font-weight: bold;
   margin: 80px 0 50px 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all  0.3s ease;
+  &:hover{
+    background-image: linear-gradient(to right, #3ae2f8, #0a6b4c);;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .8rem;
+    text-decoration: underline;
+  }
+}
+@media all and (-ms-high-contrast: none){
+  .top{
+    background: #fff;
+    color: #0a6b4c;
+  }
 }
 
 .explanation-img{
@@ -49,6 +66,9 @@
     font-weight: bold;
     color: black;
     text-decoration: none;
+    &:hover{
+      color: crimson;    
+    }
   }
   .detail{
     font-size: 17px;
