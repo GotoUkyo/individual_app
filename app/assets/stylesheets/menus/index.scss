@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0} /* 始め */
+  100% {opacity: 1} /* 終わり */
+}
+
+.body{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "游明朝", "游明朝体";
+	/* じわっと表示される */
+  animation: fadeIn 3s ease 0s 1 normal;
+  -webkit-animation: fadeIn 3s ease 0s 1 normal;
+}
+
+.top{
+  font-size: 70px;
+  font-weight: bold;
+  margin: 80px 0 50px 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all  0.3s ease;
+  &:hover{
+    background-image: linear-gradient(to right, #3ae2f8, #0a6b4c);;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .8rem;
+    text-decoration: underline;
+  }
+}
+@media all and (-ms-high-contrast: none){
+  .top{
+    background: #fff;
+    color: #0a6b4c;
+  }
+}
+
+.explanation-img{
+  height: 500px;
+  width: 700px;
+  margin-bottom: 50px;
+  background-color: cadetblue;
+}
+
+.select-message{
+  font-size: 30px;
+  margin: 20px 0 60px 0;
+  border-bottom: 2px solid black;
+}
+
+.level{
+  margin-bottom: 150px;
+  writing-mode: vertical-rl;
+  text-orientation: upright; 
+  -ms-writing-mode: tb-rl;
+  &__2{
+    padding: 0 100px;
+  }
+  .number{
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    &:hover{
+      color: crimson;    
+    }
+  }
+  .detail{
+    font-size: 17px;
+    padding-right: 15px;
+  }
+}
