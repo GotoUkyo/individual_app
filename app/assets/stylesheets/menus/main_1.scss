@@ -2,9 +2,14 @@
   box-sizing: border-box;
 }
 
+.upper-space{
+  height: 20vh;
+  width: 100vw;
+}
+
 .row_speed{
   //border: solid 1px black;
-  height: 100vh;
+  height: 60vh;
   //margin: 0 auto;
   //overflow: hidden;
   //position: relative;
@@ -24,4 +29,9 @@
 @keyframes marquee {/*動作範囲(上級者向けの設定)*/
   from   { transform: translate(0%);} 
   99%,to { transform: translate(-100%);}
+}
+
+.dawn-space{
+  height: 20vh;
+  width: 100vw;
 }
