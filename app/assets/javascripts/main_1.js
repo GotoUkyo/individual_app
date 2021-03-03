@@ -1,3 +1,3 @@
-$(document).ready(function() {
-  $("text").text("jQuery稼働テスト(稼働中)");
+$(window).ready(function() {
+  $('p').css('color', 'green');
 });
