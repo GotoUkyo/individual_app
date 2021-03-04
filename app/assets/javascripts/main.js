@@ -1,9 +1,8 @@
 $(window).ready(function repeatFunc() {
-  //$('p').css('color', 'green');
   // 流れるテキスト追加 ここから
   const randRange = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);//ランダム関数
   let html = '';
-  let container = $('.row_speed');
+  let container = $('.speed');
   for(let i = 0; i < 1; i++) {
     html += '<p style="animation-duration:'+ randRange(8,15) +'s;animation-delay:'+ randRange(1,10) +'s;">'
       + 'そうめん'
