@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  cursor: default;
 }
 
 .upper-space{
@@ -24,6 +25,9 @@
     animation-timing-function: linear;/*アニメーションのタイミング・進行割合の指定*/
     animation-duration: 25s; /*アニメーションの速度*/
     animation-iteration-count: infinite;/*アニメーションの動作回数*/
+    &:hover{
+      color: salmon;    
+    }
   }
 }
 @keyframes marquee {/*動作範囲(上級者向けの設定)*/
