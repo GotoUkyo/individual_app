@@ -19,7 +19,7 @@
   .footer 流しそうめんやりたーい！
 
 :javascript
-  function randomCharactor(c) {
+  function randomJumping(c) {
 
     //跳ねさせる要素をすべて取得
     var randomChar = document.getElementsByClassName(c);
@@ -44,11 +44,11 @@
 
             //アニメーションが終わったら再び関数を発火させる
             document.getElementsByClassName(c)[0].children[0].addEventListener("animationend", function() {
-                randomCharactor(c)
+                randomJumping(c)
             }, false)
         })(i)
     }
   }
 
   //クラス名が footer のクラスを跳ねさせる
-  randomCharactor("footer");
+  randomJumping("footer");

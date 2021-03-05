@@ -76,9 +76,12 @@
   }
 }
 
-.footer span{
+.footer{
+  font-size: 15px;
+  span{
   animation: jump 0.3s linear;
   position: relative;
+  }
 }
 
 @keyframes jump {
