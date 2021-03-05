@@ -4,7 +4,7 @@ $(window).ready(function repeatFunc() {
   let html = '';
   let container = $('.speed');
   for(let i = 0; i < 1; i++) {
-    html += '<p style="animation-duration:'+ randRange(8,15) +'s;animation-delay:'+ randRange(1,10) +'s;">'
+    html += '<p style="animation-duration:'+ randRange(7,14) +'s;animation-delay:'+ randRange(1,9) +'s;">'
       + 'そうめん'
       + '</p>';
   }

@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  cursor: default;
+}
+
+.upper-space3{
+  height: 10vh;
+  width: 100vw;
+}
+
+.high_speed{
+  height: 60vh;
+  p {
+    font-family: "游明朝", "游明朝体";
+    margin:0;
+    padding-left: 100%; /*アニメーションの範囲*/
+    display: inline-block; 
+    white-space: nowrap;
+    animation-name: middle; /*アニメーションのクラス名*/
+    animation-timing-function: linear;/*アニメーションのタイミング・進行割合の指定*/
+    animation-duration: 1s; /*アニメーションの速度*/
+    animation-iteration-count: infinite;/*アニメーションの動作回数*/
+    &:hover{
+      color: salmon;    
+    }
+  }
+}
+
+@keyframes middle {/*動作範囲(上級者向けの設定)*/
+  from   { transform: translate(0%);} 
+  99%,to { transform: translate(-100%);}
+}
+
+.dawn-space3{
+  height: 10vh;
+  width: 100vw;
+}
