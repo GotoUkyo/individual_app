@@ -75,3 +75,14 @@
     padding-right: 15px;
   }
 }
+
+.footer span{
+  animation: jump 0.3s linear;
+  position: relative;
+}
+
+@keyframes jump {
+  0% {top: 0}
+  50% {top: -50px}
+  100%{top: 0}
+}
