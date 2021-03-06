@@ -16,7 +16,7 @@
     padding-left: 100%; /*アニメーションの範囲*/
     display: inline-block; 
     white-space: nowrap;
-    animation-name: middle; /*アニメーションのクラス名*/
+    animation-name: high; /*アニメーションのクラス名*/
     animation-timing-function: linear;/*アニメーションのタイミング・進行割合の指定*/
     animation-duration: 1s; /*アニメーションの速度*/
     animation-iteration-count: infinite;/*アニメーションの動作回数*/
@@ -26,7 +26,7 @@
   }
 }
 
-@keyframes middle {/*動作範囲(上級者向けの設定)*/
+@keyframes high {/*動作範囲(上級者向けの設定)*/
   from   { transform: translate(0%);} 
   99%,to { transform: translate(-100%);}
 }
